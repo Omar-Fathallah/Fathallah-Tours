@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+           body{
+        background-color: whitesmoke;
+       }
+        .div1{
+            background-color:black;
+            box-shadow: 10cm;
+        }
+        .p1{
+            font-size: 30px;
+           
+        }
+        .buttonall {
+            border: none;
+            background-color: rgb(0, 115, 223);
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        .link1 {
+            text-decoration: none;
+            color: black;
+        }
+
+        .p1 {
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <table style="width: 28cm;">
+            <tr>
+                <td>
+                    <img src="pexels-spencer-davis-4356143.jpg" width="150" height="150" style="border-radius: 50%;">
+                </td>
+                <td style="font-size: 50px; color:white; font-weight: bolder; font-style: italic;" class="head1">
+                    About
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: rgb(0, 115, 223);">
+        <table style="width: 15cm;">
+            <tr>
+                <td>
+                    <div class="buttonall"><a href="Fathallah tours.html" class="link1">Home</a></div>
+                </td>
+                <td>
+                    <div class="buttonall"><a href="about.html" class="link1">About</a></div>
+                </td>
+                <td>
+                    <div class="buttonall"><a href="tours.html" class="link1">Tours </a></div>
+                </td>
+                <td>
+                    <div class="buttonall"><a href="contact%20us.html" class="link1">Contact us</a></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-image:url(travel-people-concept-headshot-portrait-happy-ginger-red-hair-girl-ready-travel-with-vinta.jpg); background-size: cover;">
+        <h2 style="font-size: 50px; font-style: italic; font-weight: bolder; color: rgb(243, 243, 243);">About Us:</h2>
+        <p class="p1">
+
+            Fathallah Tours is a pioneer; one of the first hundred Egyptian tourism<br><br> companies in Egypt With over (30) years’ experience in the tourism<br><br> sector.
+
+            We specialize in arranging individual tours, groups, study<br><br> trips, religious services all over Egypt, such as Cairo, Aswan,<br><br> Luxor, Abu Simbel, Alexandria, Red Sea, Oasis, Sinai, Dahab, Nuweiba,<br><br> St. Catherine Sailing Nile Cruise from Aswan to Luxor, airport transfers,<br><br> shore excursions, desert trips, etc.
+        </p>
+
+    </div>
+    <script>
+        let myname = "About";
+        let index = 0;
+        function writetext() {
+            document.querySelector(".head1").textContent = myname.slice(0, index);
+
+            index++
+            if (index > 1000000) {
+                index = 0
+            }
+
+        }
+        setInterval(function () {
+            writetext();
+        }, 500
+
+        )
+
+
+    </script>
+
+</body>
+</html>

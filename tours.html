@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tours</title>
+    <style>  
+     body{
+        background-color: whitesmoke;
+       }
+        .div1{
+            background-color:black;
+            box-shadow: 10cm;
+        }
+        .buttonall {
+            border: none;
+            background-color: rgb(0, 115, 223);
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        .link1 {
+            text-decoration: none;
+            color: black;
+        }
+
+        .p1 {
+            font-size: 30px;
+        }
+           
+        </style>
+</head>
+<body>
+
+    <div class="div1">
+        <table style="width: 27cm;">
+            <tr>
+                <td>
+                    <img src="pexels-spencer-davis-4356143.jpg" width="150" height="150" style="border-radius: 50%;">
+                </td>
+                <td style="font-size: 40px; color:white; font-weight: bolder; font-style: italic;" class="head1">
+                    Tours
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-color: rgb(0, 115, 223);">
+        <table style="width: 15cm;">
+            <tr>
+                <td>
+                    <div class="buttonall"><a href="Fathallah tours.html" class="link1">Home</a></div>
+                </td>
+                <td>
+                    <div class="buttonall"><a href="about.html" class="link1">About</a></div>
+                </td>
+                <td>
+                    <div class="buttonall"><a href="tours.html" class="link1">Tours </a></div>
+                </td>
+                <td>
+                    <div class="buttonall"><a href="contact%20us.html" class="link1">Contact us</a></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="background-image:url(3d-illustration-egypt-background-city-with-building-tree-space-pyramid-as-landmark_517064-814.jpg); background-size: cover;">
+        <h2 style="font-size: 50px; color:black; font-weight: bolder;">Available Tours:</h2>
+        <table style="width: 27cm;">
+            <tr>
+                <td>
+                    <img src="LOC_001544_shutterstock_1467423083WebOriginalCompressed.webp" width="150" height="150" style="border-radius: 50%;">
+                </td>
+                <td style="font-size: 40px; color:black; font-weight: bolder; font-style: italic;" class="head1">
+                    sharm el-sheikh
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="blue-hole.jpg" width="150" height="150" style="border-radius: 50%;">
+                </td>
+                <td style="font-size: 40px; color:black; font-weight: bolder; font-style: italic;" class="head1">
+                    Dahab's Blue Hole
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="download.jpg" width="150" height="150" style="border-radius: 50%;">
+                </td>
+                <td style="font-size: 40px; color:black; font-weight: bolder; font-style: italic;" class="head1">
+                    Luxor
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images-2-4.jpeg" width="150" height="150" style="border-radius: 50%;">
+                </td>
+                <td style="font-size: 40px; color:black; font-weight: bolder; font-style: italic;" class="head1">
+                    marina north coast
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <script>
+        let myname = "Tours";
+        let index = 0;
+        function writetext() {
+            document.querySelector(".head1").textContent = myname.slice(0, index);
+
+            index++
+            if (index > 1000000) {
+                index = 0
+            }
+
+        }
+        setInterval(function () {
+            writetext();
+        }, 500
+
+        )
+    </script>
+
+</body>
+</html>

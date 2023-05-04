@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathallah Tours</title>
+    <style>
+           body{
+        background-color: whitesmoke;
+       }
+        .div1{
+            background-color:black;
+            box-shadow: 10cm;
+        }
+        .buttonall{border: none;
+            background-color:  rgb(0, 115, 223); 
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bolder;
+            
+        } 
+        .link1{
+            text-decoration: none;
+            color: black;
+        }
+        .p1{
+            font-size: 30px;
+           
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="div1">
+    <table style="width: 40cm;">      
+        <tr>
+            <td >
+                <img src="pexels-spencer-davis-4356143.jpg" width="150" height="150" style="border-radius: 50%;">
+            </td>
+            <td style="font-size: 40px; color:white; font-weight: bolder; font-style: italic;" class="head1">
+                Fathallah Tours
+            </td>
+        </tr>
+        </table>
+        </div> <br>
+        <div style="background-color: rgb(0, 115, 223);">
+            <table style="width: 15cm;">
+                <tr>
+                    <td>
+                        <div class="buttonall"><a href="Fathallah tours.html" class="link1">Home</a></div>
+                    </td>
+                    <td>
+                        <div class="buttonall"><a href="about.html" class="link1">About</a></div>
+                    </td>
+                    <td>
+                        <div class="buttonall"><a href="tours.html" class="link1">Tours </a></div>
+                    </td>
+                    <td>
+                        <div class="buttonall"><a href="contact%20us.html" class="link1">Contact us</a></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div style="background-image:url(portrait-happy-tourist-woman-holding-passport-holiday-white-background.jpg); background-size: cover;">
+            <h2 style="font-size: 40px; font-style: italic; font-weight: bolder;">Who we are:</h2>
+            <p class="p1"> Fathallah Tours is one of the largest tourism companies in Egypt, which is <br> distinguished by the  presence of a specialized team and experts<br> in the field of tourism, with more than 30 years of experience, which<br> enables them to provide a unique tourism experience for customers.</p>
+            <h2 style="font-size: 40px; font-style: italic; font-weight: bolder;">Why you should visit Egypt:</h2>
+          <p class="p1">Egypt may be known for ancient treasures and rich history,<br> but there is more to this nation than you might expect.<br>
+             From surreal waters and golden sand beaches to remarkable<br> architecture and natural therapies, Egypt is worthy of<br> your bucket list. Here are some of the top reasons Egypt should<br> be your next destination</p>
+             <br><br><br><br>
+          <!--<h2 style="font-size: 40px; font-style: italic; font-weight: bolder;">It’s one of the oldest ancient civilisations in the world:</h2>
+           <p class="p1">Ancient Egypt is one of the most interesting and oldest civilisations<br> in the world. The Great Pyramids of Giza, the only surviving<br> ancient wonder, along with ancient Egyptian statues and tombs,<br> continue to
+             seize the attention of top archaeologists and, of course,<br> the wider world. To this day, remains of the ancient Egyptian civilization<br> continue to be discovered</p>-->
+
+            </div>
+
+
+        <script>
+            let myname="Fathallah Tours";
+            let index=0;
+            function writetext(){ 
+          document.querySelector(".head1").textContent= myname.slice(0,index);
+         
+          index++
+        if(index>1000000){
+            index=0
+        }
+      
+            }
+          setInterval(function(){
+            writetext();
+          },500
+      
+          )
+        
+         
+        </script>
+    
+</body>
+</html>
